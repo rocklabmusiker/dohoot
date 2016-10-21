@@ -1,0 +1,19 @@
+// Grid
+@import "grid/foundation";
+
+// mixins
+@import "mixins/base-mixins";
+@import "mixins/media-mixins";
+
+// Sprite
+// @import "sprites/png-sprite" // To create png-sprite.sass run "gulp sprite";
+
+// global
+@import "global/global";
+@import "global/fonts";
+
+// blocks
+@import "blocks/header";
+@import "blocks/sitebar";
+@import "blocks/footer";
+

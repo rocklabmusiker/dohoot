@@ -1,0 +1,150 @@
+@import "grid/foundation";
+@import "mixins/base-mixins";
+@import "mixins/media-mixins";
+// @import "sprites/png-sprite"; 
+
+.page-wrapper {
+	background-color: #999;
+}
+
+.top-bar {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	padding: 0;
+	
+	&__logo {
+		-webkit-flex-grow: 1;
+		        flex-grow: 1;
+	     padding-left: 2em;
+	}
+	
+	&__search {
+		 background-color: #e2dee0;
+		 
+	}
+
+	&__search svg{
+		width: 27px;
+		height: 27px;
+		padding: 0 2em;
+		margin: -7px 0;
+		cursor: pointer;
+	}
+
+	&__search-svg {
+		fill: #fff;
+		
+	}
+
+	&-login-wr {
+		display: -webkit-flex;
+	    display: -moz-flex;
+	    display: -ms-flex;
+	    display: -o-flex;
+	    display: flex;
+	}
+
+	&__search input {
+		width: 0;
+		height: 70px;
+		padding: 0;
+		margin: 0;
+		border: none;
+		background-color: #f4f0f2;
+		
+	}
+
+	&__login {
+		background-color: #e94e38;
+		height: 70px;
+		width: 311px;
+		-webkit-align-self: flex-end;
+		        align-self: flex-end;
+		-webkit-flex-grow: 1;
+		        flex-grow: 1;
+		line-height: 70px;
+		padding-left: 15px;
+	}
+
+	&__login svg{
+		height: 18px;
+		width: 30px;
+		margin: -1px;
+	}
+
+	&__login span{
+		font-weight: bold;
+		color: #FFF;
+		cursor: pointer;
+	}
+
+	&__login span:hover{
+		color: #E2DEE0;
+	}
+
+}
+
+
+.nav {
+	-webkit-flex-grow: 1;
+		    flex-grow: 1;
+
+	&__list {
+		height: 70px;
+		line-height: 41px;
+		display: inline-block;
+	}
+
+	&__item {
+		display: inline-block;
+		padding: 1em;
+		font-size: 14px;
+	}
+
+}
+
+@include max_1100 {
+	.top-bar {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	   
+	    
+	    &-login-wr {
+	    	width: 100%;
+	    }
+	}
+
+	.nav {
+	    width: 100%;
+
+	    
+		&__list {
+		    display: -webkit-flex;
+		    display: -moz-flex;
+		    display: -ms-flex;
+		    display: -o-flex;
+		    display: flex;
+		    -webkit-flex-wrap: wrap;
+		        -ms-flex-wrap: wrap;
+		            flex-wrap: wrap;
+		    -webkit-justify-content: space-around;
+		    	    justify-content: space-around;
+		}
+
+		&__item {
+			border: 1px solid #333;
+			-webkit-flex-grow: 1;
+			        flex-grow: 1;
+		}
+	}
+
+}
