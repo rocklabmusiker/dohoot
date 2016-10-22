@@ -15,9 +15,6 @@
 	display: flex;
 	-webkit-align-items: center;
 	        align-items: center;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
 	padding: 0;
 	
 	&__logo {
@@ -65,9 +62,10 @@
 	&__login {
 		background-color: #e94e38;
 		height: 70px;
-		width: 311px;
+		max-width: 250px;
+    	min-width: 130px;
 		-webkit-align-self: flex-end;
-		        align-self: flex-end;
+		        align-self: flex-end; 
 		-webkit-flex-grow: 1;
 		        flex-grow: 1;
 		line-height: 70px;
@@ -121,6 +119,27 @@
 	    &-login-wr {
 	    	width: 100%;
 	    }
+
+	    &__login {
+	    	max-width: 100%;
+    		min-width: 100%;
+	    }
+
+	    &__logo {
+	   		padding: 2em;
+	   	}
+
+	   	&__search {
+	   		height: 70px;
+	   	}
+
+	   	&__search input {
+	   		margin: -16px 0 0 85px;
+	   	}
+
+	   	&__search svg {
+		    margin: -32px 6px;
+		}
 	}
 
 	.nav {
@@ -141,9 +160,80 @@
 		}
 
 		&__item {
-			border: 1px solid #333;
+	
 			-webkit-flex-grow: 1;
 			        flex-grow: 1;
+			min-width: 52px;
+    		text-align: center;
+		}
+
+		&__item--active{
+			background-color: #FFF;
+		}
+
+		&__item:hover{
+			color: #E94E38;
+			background-color: #FFF;
+		}
+	}
+
+}
+
+@include max_508 {
+	.top-bar {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	   	
+	   	&__logo {
+	   		padding: 2em;
+	   	}
+	    
+	    &-login-wr {
+	    	width: 100%;
+	    	margin-top: 70px;
+	    	-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	    }
+
+	    &__login {
+	    	max-width: 100%;
+    		min-width: 100%;
+	    }
+
+	    &__search input {
+	   		margin: 0;
+	   	}
+
+	   	&__search svg {
+		   margin: -7px 0;
+		}
+	} 
+
+	.nav {
+	    width: 100%;
+
+	    
+		&__list {
+		    display: -webkit-flex;
+		    display: -moz-flex;
+		    display: -ms-flex;
+		    display: -o-flex;
+		    display: flex;
+		    -webkit-flex-wrap: wrap;
+		        -ms-flex-wrap: wrap;
+		            flex-wrap: wrap;
+		    -webkit-justify-content: space-around;
+		    	    justify-content: space-around;
+		}
+
+		&__item {
+	
+			-webkit-flex-grow: 1;
+			        flex-grow: 1;
+			min-width: 52px;
+    		text-align: center;
 		}
 	}
 

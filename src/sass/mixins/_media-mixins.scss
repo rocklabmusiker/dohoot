@@ -16,8 +16,8 @@
 	}
 }
 
-@mixin max_480 {
-	@media only screen and(max-width: 480px){
+@mixin max_508 {
+	@media only screen and(max-width: 508px){
 		@content;
 	}
 }
