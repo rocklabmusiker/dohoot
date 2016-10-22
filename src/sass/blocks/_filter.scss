@@ -3,3 +3,213 @@
 @import "mixins/media-mixins";
 // @import "sprites/png-sprite"; 
 
+.filter {
+	height: 60px;
+	background-color: #FFF;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-align-items: center;
+	        align-items: center;
+	
+//left
+
+	&__words a {
+		padding: 1em;
+		font-size: 14px;
+		color: #96A6A7;
+	}
+
+	&__words a:hover {
+		color: #E94E38;
+	}
+
+	&__words a.filter__words--active {
+		color: #E94E38;
+	}
+
+
+// center
+	
+	&__map-select {
+		display: flex;
+		-webkit-flex-grow: 1;
+	        	flex-grow: 1;
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
+	
+	&__select {
+		border: 1px solid #96a6a7;
+		width: 110px;
+		height: 30px;
+		margin: 0 1em;
+		overflow: hidden;
+		border-radius: 30px;
+		position: relative;
+		display: inline-block;
+	}
+
+	&__select-list {
+		width: 130px;
+		height: 30px;
+		padding-left: 7px;
+		border-radius: 30px;
+		background: transparent;
+		z-index: 999;
+		border: none;
+		color: #E94E38;
+		position: relative;
+	}
+
+
+	&__select svg{
+		height: 10px;
+		position: absolute;
+		right: 14px;
+		top: 11px;
+		width: 17px;
+			
+	}
+
+	&__down-icon {
+		fill: #333;
+	}
+
+	&__button {
+		line-height: 30px;
+		font-size: 12px;
+		padding-left: 7px;
+		width: 80px;
+		height: 30px;
+		display: inline-block;
+	}
+
+	&__map {
+		border: 1px solid #96a6a7;
+		width: 110px;
+		height: 30px;
+		margin: 0 1em;
+		border-radius: 30px;
+		position: relative;
+		display: inline-block;
+	}
+
+	&__map svg{
+		height: 10px;
+		position: absolute;
+		right: 14px;
+		top: 11px;
+		width: 17px;
+			
+		}
+
+	&__map-icon {
+		fill: #333;
+	}
+
+// right
+	&__list {
+		display: flex;
+		-webkit-align-items: center;
+		        align-items: center;
+		-webkit-flex-grow: 1;
+	        	flex-grow: 1;
+		min-width: 310px;
+		max-width: 400px;
+	}
+
+	&__text {
+		padding-right: 5px;
+	}
+
+	&__icon {
+		display: inline-block;
+		padding: 5px;
+	}
+	
+	&__icon svg {
+		width: 40px;
+		height: 40px;
+	}
+
+	&__icon-home {
+		fill: #1baf5d;
+	}
+	
+	&__icon-people {
+		fill: #b6c0c1;
+	}
+	
+	&__icon-education {
+		fill: #b6c0c1;
+	}
+	
+	&__icon-musik {
+		fill: #f19e1f;
+	}
+
+	&__icon-train {
+		fill: #88499c;
+	}
+
+}
+
+
+@include max_1100 {
+
+	.filter {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	 	-webkit-align-items: center;
+	 	        align-items: center;
+	    
+		&__words {
+			margin: 1em 0;
+		}
+
+	  
+	  	&__map-select {
+			margin: 0 0 2em 0;
+	  
+	  	}
+
+	  	&__text {
+	  		margin: 0 auto;
+	  	}
+	        	
+	}
+
+}
+
+@include max_508 {
+
+	.filter {
+	    
+		&__words {
+			margin: 2em 0;
+		}
+
+		&__words a{
+			padding: .4em;
+		}
+
+
+	  
+	  	&__map-select {
+			margin: 0 0 2em 0;
+	  
+	  	}
+
+	  	.filter__list {
+		    margin-left: 55px;
+		}
+
+	  	&__text {
+	  		display: none;
+	  	}
+	        	
+	}
+
+}

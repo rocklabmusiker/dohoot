@@ -23,12 +23,22 @@ jQuery(document).ready(function($) {
 	   $(this).attr('placeholder',$(this).data('placeholder'));
 	 });
 
-/*add class*/
+/*add class top menu*/
 	  $(".nav__list li").click(function() {
     
       $(".nav__list li").removeClass('nav__item--active');
       $(this).addClass('nav__item--active');
     })
+
+
+/*add class filter words*/
+	  $(".filter__words a").click(function() {
+    
+      $(".filter__words a").removeClass('filter__words--active');
+      $(this).addClass('filter__words--active');
+    })
+
+
 	
-});
+}); //ready end
 
