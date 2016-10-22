@@ -3,9 +3,7 @@
 @import "mixins/media-mixins";
 // @import "sprites/png-sprite"; 
 
-.page-wrapper {
-	background-color: #999;
-}
+
 
 .top-bar {
 	display: -webkit-flex;
@@ -63,7 +61,7 @@
 		background-color: #e94e38;
 		height: 70px;
 		max-width: 250px;
-    	min-width: 130px;
+    	min-width: 120px;
 		-webkit-align-self: flex-end;
 		        align-self: flex-end; 
 		-webkit-flex-grow: 1;
@@ -168,12 +166,12 @@
 		}
 
 		&__item--active{
-			background-color: #FFF;
+			color: #E94E38;
 		}
 
 		&__item:hover{
 			color: #E94E38;
-			background-color: #FFF;
+			background-color: #E2DEE0;
 		}
 	}
 

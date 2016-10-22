@@ -1,0 +1,129 @@
+@import "grid/foundation";
+@import "mixins/base-mixins";
+@import "mixins/media-mixins";
+// @import "sprites/png-sprite"; 
+
+.top-banner {
+	background: url(../../images/desktop/top-banner.jpg) no-repeat 50% 0;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	    height: 42vh;
+	    
+
+	&__search-wr h2 {
+		color: #FFF;
+		text-align: center;
+		padding: 1em 0;
+	}
+
+}
+
+.top-form {
+		text-align: center;
+		
+		
+		&__select {
+			background: transparent;
+		    border: medium none;
+		    border-radius: 30px;
+		    color: #fff;
+		    font-size: 16px;
+		    padding-left: 10px;
+		    height: 40px;
+		    width: 220px;
+		    z-index: 100;
+		    position: relative;
+		}
+
+		&__option {
+			background: rgba(244,244,244,.2);
+			color: #111;
+		}
+
+		&__custom {
+			width: 200px;
+			height: 40px;
+			overflow: hidden;
+			border-radius: 30px;
+			display: inline-block;
+			margin: 0 2em;
+			position: relative;
+			background: rgba(244, 244, 244, 0.1) none repeat scroll 0 0;
+		}
+
+		&__custom svg{
+			height: 10px;
+		    position: absolute;
+		    right: 14px;
+		    top: 15px;
+		    width: 17px;
+			
+		}
+
+		&__down{
+			fill: #fff;
+		}
+
+		&__input {
+			width: 440px;
+			height: 50px;
+			color: #fff;
+		    font-size: 16px;
+			margin: 2em auto;
+			padding-left: 10px;
+			border-radius: 30px;
+			border: none;
+			display: block;
+			position: relative;
+			background: rgba(244, 244, 244, 0.1) none repeat scroll 0 0;
+		}
+
+		&__button {
+			width: 135px;
+			height: 50px;
+			line-height: 50px;
+			color: #fff;
+		    font-size: 16px;
+			margin: 2em auto;
+			border-radius: 30px;
+			border: none;
+			display: block;
+			background-color:#e94e38;
+		}
+
+		&__button:hover {
+			background: rgba(244, 244, 244, 0.1) none repeat scroll 0 0;
+		}
+	}
+
+@include max_508 {
+/* 	.top-banner {
+    height: 42vh;
+    
+
+&__search-wr h2 {
+	color: #FFF;
+	text-align: center;
+	padding: 1em 0;
+}
+
+} */
+
+	.top-form {
+
+		&__custom {
+			overflow: hidden;
+			border-radius: 30px;
+			display: block;
+			margin: 1em auto;
+
+		}
+
+		&__input {
+			width: 250px;
+		}
+
+	}
+
+}

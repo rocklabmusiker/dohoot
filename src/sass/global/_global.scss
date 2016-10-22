@@ -102,12 +102,10 @@ p, a, span {
   font-family: 'Lato-Regular';
 }
 
-h1 {
-  font-size: 3rem;
-}
+
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -120,4 +118,12 @@ h4 {
 
 p, span {
   font-size: 14px;
+}
+
+@include max_508 {
+  
+  h2 {
+    font-size: 2.2rem;
+  }
+
 }
