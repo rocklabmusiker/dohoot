@@ -11,11 +11,13 @@
 // global
 @import "global/global";
 @import "global/fonts";
+@import "global/elements";
 
 // blocks
 @import "blocks/header";
 @import "blocks/top-banner";
 @import "blocks/filter";
+@import "blocks/content";
 @import "blocks/sitebar";
 @import "blocks/footer";
 

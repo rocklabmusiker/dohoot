@@ -1,0 +1,1084 @@
+/* kartei home small*/
+
+.home {
+	width: 210px;
+	height: 265px;
+	min-width: 210px;
+	margin: 2em 1em;
+	background-color: #fff;
+	position: relative;
+	
+	&__photo {
+		border-bottom: 2px solid #1baf5d; // border under img to change
+		position: relative;
+		width: 100%;
+	}
+
+	&__photo img{
+		margin: 0 0 -4px;
+	}
+
+	&__prise {
+		position: absolute;
+		display: inline-block;
+		border-radius: 10px;
+		background-color: #1baf5d; // back color to change
+		color: #fff;
+		padding: 2px 10px;
+		font-size: 10px;
+		right: 10px;
+	    top: 5px;
+	}
+	// hover
+	 
+	&__hover {
+		background-color: rgba(27,175,93,.7); // color to change
+		position: absolute;
+		width: 210px;
+		height: 140px;
+		z-index: 999;
+		opacity: 0;
+		cursor: pointer;
+	
+		
+		&-more {
+			border: 2px solid #fff;
+			-webkit-border-radius: 30px;
+			        border-radius: 30px;
+			width:135px;
+			height: 30px;
+			margin: 2em auto;
+			color: #FFF;
+			position: relative;	
+		}
+
+		.svg {
+			fill: #fff;
+		}
+
+		a {
+			display: inline-block;
+			line-height: 30px;
+			padding: 0 10px;
+			position: absolute;
+			width: 80px;
+		}
+
+		
+		&-more svg{
+			width: 16px;
+			height: 16px;
+			margin: 7px 0 0 14px;
+		}
+
+		&-rating {
+			position: relative;
+		}
+
+		
+		&-rating svg:first-child{
+			width: 86px;
+			height: 16px;
+			float: left;
+			margin-left: 30px;
+		}
+
+		&-rating svg:last-child{
+			width: 25px;
+			height: 20px;
+			float: right;
+			margin-right: 40px;
+		}
+
+	}
+
+	&__hover:hover {
+		opacity: 1;
+		-webkit-transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-ms-transition: all .5s ease;
+			-o-transition: all .5s ease;
+			   transition: all .5s ease;	
+	}
+
+	// hover ende
+
+	&__info	{
+		text-align: center;
+		
+		h3 {
+			font-size: 12px;
+			padding: 25px 0 0;
+			color: #566375;
+		}
+
+		p {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 33px;
+			font-size: 12px;
+			color: #1BAF5D; // color to change
+			text-transform: uppercase;
+		}
+	}
+
+	&__rating { 
+		bottom: 6px;
+	    left: 0;
+	    position: absolute;
+	    right: 0;	
+	}
+
+	&__rating svg { 
+		width: 86px;
+		height: 16px;
+			
+	}
+
+	&__rating span{ 
+		display: inline-block;
+		color: #566375;
+	}
+
+		.rating-svg {
+			fill:#f19e1f; 
+		}
+
+	&__main-icon {
+		background-color: #FFF;
+		width: 56px;
+		height: 56px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		position: absolute;
+		right: 35%;
+		top: 112px;
+		z-index: 9999;
+		
+		svg {
+			width: 50px;
+			height: 50px;
+			margin: 3px;
+		}
+
+		.main-svg {
+			fill: #1BAF5D;
+			margin: 0 auto;
+		}
+	}
+	
+}
+
+/* kartei education small*/
+
+.education {
+	width: 210px;
+	height: 265px;
+	min-width: 210px;
+	margin: 2em 1em;
+	background-color: #fff;
+	position: relative;
+	
+	&__photo {
+		border-bottom: 2px solid #b6c0c1; // border under img to change
+		position: relative;
+		width: 100%;
+	}
+
+	&__photo img{
+		margin: 0 0 -4px;
+	}
+
+	&__prise {
+		position: absolute;
+		display: inline-block;
+		border-radius: 10px;
+		background-color: #b6c0c1; // back color to change
+		color: #fff;
+		padding: 2px 10px;
+		font-size: 10px;
+		right: 10px;
+	    top: 5px;
+	}
+	// hover
+	 
+	&__hover {
+		background-color: rgba(182,192,193,.7); // color to change
+		position: absolute;
+		width: 210px;
+		height: 140px;
+		z-index: 999;
+		opacity: 0;
+		cursor: pointer;
+	
+		
+		&-more {
+			border: 2px solid #fff;
+			-webkit-border-radius: 30px;
+			        border-radius: 30px;
+			width:135px;
+			height: 30px;
+			margin: 2em auto;
+			color: #FFF;
+			position: relative;	
+		}
+
+		.svg {
+			fill: #fff;
+		}
+
+		a {
+			display: inline-block;
+			line-height: 30px;
+			padding: 0 10px;
+			position: absolute;
+			width: 80px;
+		}
+
+		
+		&-more svg{
+			width: 16px;
+			height: 16px;
+			margin: 7px 0 0 14px;
+		}
+
+		&-rating {
+			position: relative;
+		}
+
+		
+		&-rating svg:first-child{
+			width: 86px;
+			height: 16px;
+			float: left;
+			margin-left: 30px;
+		}
+
+		&-rating svg:last-child{
+			width: 25px;
+			height: 20px;
+			float: right;
+			margin-right: 40px;
+		}
+
+	}
+
+	&__hover:hover {
+		opacity: 1;
+		-webkit-transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-ms-transition: all .5s ease;
+			-o-transition: all .5s ease;
+			   transition: all .5s ease;	
+	}
+
+	// hover ende
+
+	&__info	{
+		text-align: center;
+		
+		h3 {
+			font-size: 12px;
+			padding: 25px 0 0;
+			color: #566375;
+		}
+
+		p {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 33px;
+			font-size: 12px;
+			color: #b6c0c1; // color to change
+			text-transform: uppercase;
+		}
+	}
+
+	&__rating { 
+		bottom: 6px;
+	    left: 0;
+	    position: absolute;
+	    right: 0;		
+	}
+
+	&__rating svg { 
+		width: 86px;
+		height: 16px;
+			
+	}
+
+	&__rating span{ 
+		display: inline-block;
+		color: #566375;
+	}
+
+		.rating-svg {
+			fill:#f19e1f; 
+		}
+
+	&__main-icon {
+		background-color: #FFF;
+		width: 56px;
+		height: 56px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		position: absolute;
+		right: 35%;
+		top: 112px;
+		z-index: 9999;
+		
+		svg {
+			width: 50px;
+			height: 50px;
+			margin: 3px;
+		}
+
+		.main-svg {
+			fill: #B6C0C1; // color to change
+			margin: 0 auto;
+		}
+	}
+	
+}
+
+/* kartei people small*/
+
+.people {
+	width: 210px;
+	height: 265px;
+	min-width: 210px;
+	margin: 2em 1em;
+	background-color: #fff;
+	position: relative;
+	
+	&__photo {
+		border-bottom: 2px solid #b6c0c1; // border under img to change
+		position: relative;
+		width: 100%;
+	}
+
+	&__photo img{
+		margin: 0 0 -4px;
+	}
+
+	&__prise {
+		position: absolute;
+		display: inline-block;
+		border-radius: 10px;
+		background-color: #b6c0c1; // back color to change
+		color: #fff;
+		padding: 2px 10px;
+		font-size: 10px;
+		right: 10px;
+	    top: 5px;
+	}
+	// hover
+	 
+	&__hover {
+		background-color: rgba(182,192,193,.7); // color to change
+		position: absolute;
+		width: 210px;
+		height: 140px;
+		z-index: 999;
+		opacity: 0;
+		cursor: pointer;
+	
+		
+		&-more {
+			border: 2px solid #fff;
+			-webkit-border-radius: 30px;
+			        border-radius: 30px;
+			width:135px;
+			height: 30px;
+			margin: 2em auto;
+			color: #FFF;
+			position: relative;	
+		}
+
+		.svg {
+			fill: #fff;
+		}
+
+		a {
+			display: inline-block;
+			line-height: 30px;
+			padding: 0 10px;
+			position: absolute;
+			width: 80px;
+		}
+
+		
+		&-more svg{
+			width: 16px;
+			height: 16px;
+			margin: 7px 0 0 14px;
+		}
+
+		&-rating {
+			position: relative;
+		}
+
+		
+		&-rating svg:first-child{
+			width: 86px;
+			height: 16px;
+			float: left;
+			margin-left: 30px;
+		}
+
+		&-rating svg:last-child{
+			width: 25px;
+			height: 20px;
+			float: right;
+			margin-right: 40px;
+		}
+
+	}
+
+	&__hover:hover {
+		opacity: 1;
+		-webkit-transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-ms-transition: all .5s ease;
+			-o-transition: all .5s ease;
+			   transition: all .5s ease;	
+	}
+
+	// hover ende
+
+	&__info	{
+		text-align: center;
+		
+		h3 {
+			font-size: 12px;
+			padding: 25px 0 0;
+			color: #566375;
+		}
+
+		p {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 33px;
+			font-size: 12px;
+			color: #b6c0c1; // color to change
+			text-transform: uppercase;
+		}
+	}
+
+	&__rating { 
+		bottom: 6px;
+	    left: 0;
+	    position: absolute;
+	    right: 0;		
+	}
+
+	&__rating svg { 
+		width: 86px;
+		height: 16px;
+			
+	}
+
+	&__rating span{ 
+		display: inline-block;
+		color: #566375;
+	}
+
+		.rating-svg {
+			fill:#f19e1f; 
+		}
+
+	&__main-icon {
+		background-color: #FFF;
+		width: 56px;
+		height: 56px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		position: absolute;
+		right: 35%;
+		top: 112px;
+		z-index: 9999;
+		
+		svg {
+			width: 50px;
+			height: 50px;
+			margin: 3px;
+		}
+
+		.main-svg {
+			fill: #B6C0C1; // color to change
+			margin: 0 auto;
+		}
+	}
+	
+}
+
+/* kartei musik small*/
+
+.musik {
+	width: 210px;
+	height: 265px;
+	min-width: 210px;
+	margin: 2em 1em;
+	background-color: #fff;
+	position: relative;
+	
+	&__photo {
+		border-bottom: 2px solid #F19E1F; // border under img to change
+		position: relative;
+		width: 100%;
+	}
+
+	&__photo img{
+		margin: 0 0 -4px;
+	}
+
+	&__prise {
+		position: absolute;
+		display: inline-block;
+		border-radius: 10px;
+		background-color: #F19E1F; // back color to change
+		color: #fff;
+		padding: 2px 10px;
+		font-size: 10px;
+		right: 10px;
+	    top: 5px;
+	}
+	// hover
+	 
+	&__hover {
+		background-color: rgba(241,158,31,.7); // color to change
+		position: absolute;
+		width: 210px;
+		height: 140px;
+		z-index: 999;
+		opacity: 0;
+		cursor: pointer;
+	
+		
+		&-more {
+			border: 2px solid #fff;
+			-webkit-border-radius: 30px;
+			        border-radius: 30px;
+			width:135px;
+			height: 30px;
+			margin: 2em auto;
+			color: #FFF;
+			position: relative;	
+		}
+
+		.svg {
+			fill: #fff;
+		}
+
+		a {
+			display: inline-block;
+			line-height: 30px;
+			padding: 0 10px;
+			position: absolute;
+			width: 80px;
+		}
+
+		
+		&-more svg{
+			width: 16px;
+			height: 16px;
+			margin: 7px 0 0 14px;
+		}
+
+		&-rating {
+			position: relative;
+		}
+
+		
+		&-rating svg:first-child{
+			width: 86px;
+			height: 16px;
+			float: left;
+			margin-left: 30px;
+		}
+
+		&-rating svg:last-child{
+			width: 25px;
+			height: 20px;
+			float: right;
+			margin-right: 40px;
+		}
+
+	}
+
+	&__hover:hover {
+		opacity: 1;
+		-webkit-transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-ms-transition: all .5s ease;
+			-o-transition: all .5s ease;
+			   transition: all .5s ease;	
+	}
+
+	// hover ende
+
+	&__info	{
+		text-align: center;
+		
+		h3 {
+			font-size: 12px;
+			padding: 25px 0 0;
+			color: #566375;
+		}
+
+		p {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 33px;
+			font-size: 12px;
+			color: #F19E1F; // color to change
+			text-transform: uppercase;
+		}
+	}
+
+	&__rating { 
+		bottom: 6px;
+	    left: 0;
+	    position: absolute;
+	    right: 0;		
+	}
+
+	&__rating svg { 
+		width: 86px;
+		height: 16px;
+			
+	}
+
+	&__rating span{ 
+		display: inline-block;
+		color: #566375;
+	}
+
+		.rating-svg {
+			fill:#f19e1f; 
+		}
+
+	&__main-icon {
+		background-color: #FFF;
+		width: 56px;
+		height: 56px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		position: absolute;
+		right: 35%;
+		top: 112px;
+		z-index: 9999;
+		
+		svg {
+			width: 50px;
+			height: 50px;
+			margin: 3px;
+		}
+
+		.main-svg {
+			fill: #F19E1F; // color to change
+			margin: 0 auto;
+		}
+	}
+	
+}
+
+/* kartei train small*/
+
+.train {
+	width: 210px;
+	height: 265px;
+	min-width: 210px;
+	margin: 2em 1em;
+	background-color: #fff;
+	position: relative;
+	
+	&__photo {
+		border-bottom: 2px solid #88499c; // border under img to change
+		position: relative;
+		width: 100%;
+	}
+
+	&__photo img{
+		margin: 0 0 -4px;
+	}
+
+	&__prise {
+		position: absolute;
+		display: inline-block;
+		border-radius: 10px;
+		background-color: #88499c; // back color to change
+		color: #fff;
+		padding: 2px 10px;
+		font-size: 10px;
+		right: 10px;
+	    top: 5px;
+	}
+	// hover
+	 
+	&__hover {
+		background-color: rgba(136,73,156,.7); // color to change
+		position: absolute;
+		width: 210px;
+		height: 140px;
+		z-index: 999;
+		opacity: 0;
+		cursor: pointer;
+	
+		
+		&-more {
+			border: 2px solid #fff;
+			-webkit-border-radius: 30px;
+			        border-radius: 30px;
+			width:135px;
+			height: 30px;
+			margin: 2em auto;
+			color: #FFF;
+			position: relative;	
+		}
+
+		.svg {
+			fill: #fff;
+		}
+
+		a {
+			display: inline-block;
+			line-height: 30px;
+			padding: 0 10px;
+			position: absolute;
+			width: 80px;
+		}
+
+		
+		&-more svg{
+			width: 16px;
+			height: 16px;
+			margin: 7px 0 0 14px;
+		}
+
+		&-rating {
+			position: relative;
+		}
+
+		
+		&-rating svg:first-child{
+			width: 86px;
+			height: 16px;
+			float: left;
+			margin-left: 30px;
+		}
+
+		&-rating svg:last-child{
+			width: 25px;
+			height: 20px;
+			float: right;
+			margin-right: 40px;
+		}
+
+	}
+
+	&__hover:hover {
+		opacity: 1;
+		-webkit-transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-ms-transition: all .5s ease;
+			-o-transition: all .5s ease;
+			   transition: all .5s ease;	
+	}
+
+	// hover ende
+
+	&__info	{
+		text-align: center;
+		
+		h3 {
+			font-size: 12px;
+			padding: 25px 0 0;
+			color: #566375;
+		}
+
+		p {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 33px;
+			font-size: 12px;
+			color: #88499c; // color to change
+			text-transform: uppercase;
+		}
+	}
+
+	&__rating { 
+		bottom: 6px;
+	    left: 0;
+	    position: absolute;
+	    right: 0;		
+	}
+
+	&__rating svg { 
+		width: 86px;
+		height: 16px;
+			
+	}
+
+	&__rating span{ 
+		display: inline-block;
+		color: #566375;
+	}
+
+		.rating-svg {
+			fill:#f19e1f; 
+		}
+
+	&__main-icon {
+		background-color: #FFF;
+		width: 56px;
+		height: 56px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		position: absolute;
+		right: 35%;
+		top: 112px;
+		z-index: 9999;
+		
+		svg {
+			width: 50px;
+			height: 50px;
+			margin: 3px;
+		}
+
+		.main-svg {
+			fill: #88499c; // color to change
+			margin: 0 auto;
+		}
+	}
+	
+}
+
+
+/*===========================
+=== kartei musik big=====*/
+
+.musik-big {
+	width: 486px;
+	height: 265px;
+	min-width: 275px;
+	margin: 2em 0;
+	background-color: #fff;
+	position: relative;
+	
+	&__photo {
+		border-bottom: 2px solid #F19E1F; // border under img to change
+		position: relative;
+		width: 100%;
+	}
+
+	&__photo img{
+		margin: 0 0 -4px;
+		width: 100%;
+	}
+
+
+	&__info	{
+
+		svg {
+			width: 80px;
+			height: 15px;
+			margin: 15px 0 0 90px;
+		}
+		
+		h3 {
+			font-size: 12px;
+			padding: 25px 0 0;
+			color: #566375;
+		}
+
+	}
+
+	&__rating { 
+		bottom: 6px;
+	    left: 18%;
+	    position: absolute;
+	    right: 0;		
+	}
+
+	&__rating svg { 
+		width: 60px;
+		height: 10px;
+			
+	}
+
+	&__rating span:first-child{ 
+		display: inline-block;
+		color: #fff;
+		font-size: 14px;
+		padding-right: 10px;
+		text-transform: uppercase;
+	}
+
+	&__rating span:last-child{ 
+		display: inline-block;
+		color: #fff;
+		font-size: 10px;
+	}
+
+		.rating-svg {
+			fill:#f19e1f; 
+		}
+
+	&__main-icon {
+		background-color: #FFF;
+		width: 56px;
+		height: 56px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		position: absolute;
+		left: 4%;
+		top: 95px;
+		z-index: 9999;
+		
+		svg {
+			width: 50px;
+			height: 50px;
+			margin: 3px;
+		}
+
+		.main-svg {
+			fill: #F19E1F; // color to change
+			margin: 0 auto;
+		}
+	}
+	
+}
+
+.testimonials {
+	display: flex;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	-webkit-align-items: center;
+	        align-items: center;
+	
+		&__img {
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
+			overflow: hidden;
+			border: 2px solid #e2dee0;
+			width: 50px;
+			height: 40px;
+			margin: 10px;
+			
+			img {
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		&__text {
+			margin: -26px 0 0;
+   			padding: 0 10px 0 0;
+   			
+   			h3 {
+   				font-size: 16px;
+   			}
+		}
+
+}
+
+/*===========================
+=== kartei home big=====*/
+
+.home-big {
+	width: 486px;
+	height: 265px;
+	min-width: 275px;
+	margin: 2em 0;
+	background-color: #fff;
+	position: relative;
+	
+	&__photo {
+		border-bottom: 2px solid #1BAF5D; // border under img to change
+		position: relative;
+		width: 100%;
+	}
+
+	&__photo img{
+		margin: 0 0 -4px;
+		width: 100%;
+	}
+
+
+	&__info	{
+
+		svg {
+			width: 80px;
+			height: 15px;
+			margin: 15px 0 0 90px;
+		}
+		
+		h3 {
+			font-size: 12px;
+			padding: 25px 0 0;
+			color: #566375;
+		}
+
+	}
+
+	&__rating { 
+		bottom: 6px;
+	    left: 18%;
+	    position: absolute;
+	    right: 0;		
+	}
+
+	&__rating svg { 
+		width: 60px;
+		height: 10px;
+			
+	}
+
+	&__rating span:first-child{ 
+		display: inline-block;
+		color: #fff;
+		font-size: 14px;
+		padding-right: 10px;
+		text-transform: uppercase;
+	}
+
+	&__rating span:last-child{ 
+		display: inline-block;
+		color: #fff;
+		font-size: 10px;
+	}
+
+		.rating-svg {
+			fill:#f19e1f; 
+		}
+
+	&__main-icon {
+		background-color: #FFF;
+		width: 56px;
+		height: 56px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		position: absolute;
+		left: 4%;
+		top: 95px;
+		z-index: 9999;
+		
+		svg {
+			width: 50px;
+			height: 50px;
+			margin: 3px;
+		}
+
+		.main-svg {
+			fill: #1BAF5D; // color to change
+			margin: 0 auto;
+		}
+	}
+	
+}
+

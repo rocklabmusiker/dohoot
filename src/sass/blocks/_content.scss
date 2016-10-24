@@ -1,0 +1,104 @@
+@import "grid/foundation";
+@import "mixins/base-mixins";
+@import "mixins/media-mixins";
+// @import "sprites/png-sprite";
+
+.content {
+	background-color: #f3f1f2;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	
+	&__row {
+		display: flex;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		margin-top: 4em;
+		padding: 1em;
+		
+	}
+
+}
+
+
+
+.row-1__double-one,
+.row-1__double-two {
+			display: flex;
+			-webkit-flex-grow: 1;
+			        flex-grow: 1;
+			-webkit-justify-content: space-around;
+			        justify-content: space-around;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap; 
+}
+
+.row-1__double-one:first-child {
+	margin: 0 0 0 7em;
+}
+
+.row-1__double-two:last-child {
+	margin: 0 7em 0 0;
+}
+
+.row-2 {
+		-webkit-flex-wrap: nowrap;
+		    -ms-flex-wrap: nowrap;
+		        flex-wrap: nowrap;
+	}
+
+.row-2 .big:first-child {
+	 margin: -3em 2em 0 9em;
+}
+
+.row-2 .big:last-child {
+	margin: -3em 9em 0 2em;
+}
+
+@include max_1100  {
+	.content {
+		 margin-top: 10em;
+
+	}
+
+	.row-1__double-one:first-child {
+		margin: 1em 0 ;
+	}
+
+	.row-1__double-two:last-child {
+		margin: 1em 0;
+	}
+
+	.row-2 {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	    margin-top: -3em;
+	}
+
+	.row-2 .big:first-child {
+		margin: 4em 2em 0 2em;
+	}
+
+	.row-2 .big:last-child {
+		margin: 4em 2em 0 2em;
+	}
+}
+
+@include max_508  {
+	.content {
+		 margin-top: 12em;
+
+	}
+	
+	.musik-big__main-icon,
+	.home-big__main-icon {
+    	top: -25px;
+	}
+
+}

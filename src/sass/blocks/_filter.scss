@@ -155,6 +155,15 @@
 
 }
 
+.home-button, 
+.people-button,
+.education-button,
+.musik-button,
+.train-button {
+	cursor: pointer;
+}
+
+
 
 @include max_1100 {
 
