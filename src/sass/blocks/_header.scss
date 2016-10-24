@@ -105,6 +105,15 @@
 		font-size: 14px;
 	}
 
+	&__item--active{
+		color: #E94E38;
+	}
+
+	&__item:hover{
+		color: #E94E38;
+		background-color: #E2DEE0;
+	}
+
 }
 
 @include max_1100 {

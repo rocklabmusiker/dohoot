@@ -2,3 +2,220 @@
 @import "mixins/base-mixins";
 @import "mixins/media-mixins";
 // @import "sprites/png-sprite"; 
+
+.footer {
+	background: url(../../images/desktop/top-banner.jpg) no-repeat 50% 0;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	height: 65vh;
+	margin-top: -2em;
+	
+	
+	&__subscribe {
+		position: relative;
+		left: 0; right: 0;
+		top: 6em;
+	}
+
+	&__subscribe::after {
+		content: " ";
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		height: 1px;
+		background-color: #706965;
+	}
+	
+	&__subscribe h3 {
+		text-align: center;
+		font-size: 35px;
+		color: #FFF;	
+	}
+
+	&__form {
+		margin: 5em auto;
+		text-align: center;
+		border: 1px solid #706965;
+		background: rgba(244,244,244,.2);
+		height: 60px;
+		max-width: 500px;
+		-webkit-border-radius: 30px;
+		        border-radius: 30px;
+		position: relative;
+		
+
+		input {
+			float: left;
+			height: 58px;
+			width: 60%;
+			-webkit-border-radius: 30px 0 0 30px;
+			        border-radius: 30px 0 0 30px;
+			border: none;
+			background: transparent;
+			color: #FFF;
+		}
+
+		input[placeholder] {
+			padding-left: 40px;
+		}
+
+		a {
+			display: block;
+			color: #FFF;
+			width: 100px;
+			float: right;
+			height: 50px;
+			background-color: #E94E38;
+			-webkit-border-radius: 30px;
+			        border-radius: 30px;
+			font-size: 14px;
+			text-align: center;
+			line-height: 50px;
+			margin: 5px;
+			-webkit-box-shadow: 6px 0px 5px 0px rgba(0,0,0,0.32);
+			-moz-box-shadow: 6px 0px 5px 0px rgba(0,0,0,0.32);
+			box-shadow: 6px 0px 5px 0px rgba(0,0,0,0.32);
+		}
+
+		a:hover {
+			background-color: #fff;
+			color: #E94E38;
+		}
+
+	}
+
+
+	&__form svg {
+		width: 18px;
+		height: 15px;
+		left: 14px;
+		top: 24px;
+		position: absolute;
+	}
+
+	&__icon-mail {
+		width: 18px;
+		height: 15px;
+		fill:#fff;
+	}
+
+	&__impressum {
+		display: flex;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		position: relative;
+		top: 140px;
+	}
+
+	&__links {
+		color: #FFF;
+		margin: 0 2em;
+		
+	}
+
+	&__links h3{
+		color: #FFF;
+		margin-bottom: .5em;
+	}
+
+	&__links a{
+		display: block;
+		font-size: 14px;
+		cursor: pointer;
+	}
+
+	&__links a:hover{
+		color: #e94e38;
+	}
+
+	&__follow {
+		color: #FFF;
+		margin: 0 2em;
+	}
+
+	&__follow h3{
+		margin-bottom: .5em;
+	}
+
+	&__follow p{
+		margin-top: 2em;
+	}
+
+}
+
+.facebook {
+	width: 15px;
+	height: 29px;
+}
+
+.twitter {
+	width: 28px;
+	height: 22px;
+}
+
+.google {
+	width: 27px;
+	height: 29px;
+}
+
+.youtube {
+	width: 26px;
+	height: 31px;
+}
+
+
+@include max_508 {
+	.footer {
+		height: 95vh;
+		
+		&__form {
+
+		height: 50px;
+		max-width: 500px;
+
+			input {
+				height: 48px;
+				width: 52%;
+			}
+
+
+			a {
+				width: 80px;
+				height: 40px;
+				font-size: 12px;
+				line-height: 40px;
+				margin: 5px;
+			}
+
+			svg {
+				top: 18px;
+			}
+		}
+
+		&__links {
+			text-align: center;
+		}
+
+		&__follow {
+			text-align: center;
+		}
+
+		&__follow h3{
+			 margin-top: 1em;
+		}
+
+		&__impressum {
+			-webkit-flex-direction: column;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+		    -webkit-align-items: center;
+		            align-items: center;
+		    top:80px;
+		}
+	}
+}
+
