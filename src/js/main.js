@@ -1,7 +1,8 @@
 //= ../../bower_components/jquery/dist/jquery.js
 /*= ../../bower_components/foundation-sites/dist/foundation.min.js*/
 
-//= libs/jquery.mixitup.js
+//= libs/filter/jquery.mixitup.js
+//= libs/tabs/jquery-ui.min.js
 //= libs/app.js
 
 

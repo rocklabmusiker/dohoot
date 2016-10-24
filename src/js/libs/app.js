@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
     
       $(".nav__list li").removeClass('nav__item--active');
       $(this).addClass('nav__item--active');
-    })
+    });
 
 
 /*add class filter words*/
@@ -36,14 +36,23 @@ jQuery(document).ready(function($) {
     
       $(".filter__words a").removeClass('filter__words--active');
       $(this).addClass('filter__words--active');
-    })
+    });
 
 
 	/*mixitup*/
-	$("#container").mixItUp({
+	$("#container").mixItUp();
 
-		
-	});
+	/*tabs*/
+	$( function() {
+    	$("#tabs").tabs();
+  	});
+
+  	/*add class icons offer*/
+	  $(".offer__icon .offer-i").click(function() {
+    
+      $(".offer__icon .offer-i").removeClass('icon-active');
+      $(this).addClass('icon-active');
+    });
 	
 }); //ready end
 

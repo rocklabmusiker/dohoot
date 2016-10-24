@@ -1,0 +1,233 @@
+@import "grid/foundation";
+@import "mixins/base-mixins";
+@import "mixins/media-mixins";
+// @import "sprites/png-sprite";
+
+.offer {
+	background-color: #F3F1F2;
+	
+	&__title {
+		
+		h3 {
+			text-align: center;
+			padding: 3em 0 .2em 0;
+			color: #566375;
+		}
+
+		p {
+			text-align: center;
+			color: #B2BCBD;
+		}
+	}
+
+	&__icons {
+		text-align: center;
+		margin: 4em 0 2em 0;
+		
+		li {
+			display: inline;
+		}
+	}
+
+	&__icon svg{
+		width: 100px;
+		height: 100px;
+		padding: 0 1em;
+		cursor: pointer;
+	}
+
+	&__icon-home,
+	&__icon-people,
+	&__icon-education,
+	&__icon-musik,
+	&__icon-train {
+		stroke:#9dacad;
+		fill:#fff;	
+	}
+
+	&__icon-home:hover,
+	&__icon-people:hover,
+	&__icon-education:hover,
+	&__icon-musik:hover,
+	&__icon-train:hover {
+		stroke:#1db05e;
+		fill:#fff;		
+	}
+
+	&__tab-home h3,
+	&__tab-people h3,
+	&__tab-education h3,
+	&__tab-musik h3,
+	&__tab-train h3 {
+		text-align: center;
+		color: #1db05e;
+		font-size: 25px;
+		margin-bottom: 1em;
+	}
+
+	&__tab-text {
+		display: flex;
+	}
+
+	&__tab-text	p:first-child {
+		padding: 0 2em 0 10em;
+		text-align: left;
+	}
+
+	&__tab-text	p:last-child {
+		padding: 0 10em 0 2em;
+		text-align: left;
+	}
+	
+}
+
+.offer-i {
+	width: 100px;
+	height: 100px;
+}
+
+.icon-active {
+	stroke:#1db05e;
+	fill:#fff;	
+}
+
+
+@include max_900 {
+	.offer {
+	
+		&__icon svg{
+			width: 80px;
+			height: 80px;
+		}
+
+		&__tab-text	p:first-child {
+			padding: 0 2em 0 4em;
+		}
+
+		&__tab-text	p:last-child {
+			padding: 0 4em 0 2em;
+		}
+	}
+
+	.offer-i {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+@include max_600 {
+	.offer {
+	
+		&__icon svg{
+			width: 70px;
+			height: 70px;
+		}
+
+		&__tab-text {
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
+		}
+
+		&__tab-text	p:first-child {
+			padding: 0 2em 1em 2em;
+		}
+
+		&__tab-text	p:last-child {
+			padding: 1em 2em 1em 2em;
+		}
+
+		&__tab-home h3,
+		&__tab-people h3,
+		&__tab-education h3,
+		&__tab-musik h3,
+		&__tab-train h3 {
+			margin-top: 1em;
+		}
+		
+	}
+
+	.offer-i {
+		width: 70px;
+		height: 70px;
+	}
+}
+
+@include max_508 {
+	.offer {
+
+		&__title h3 {
+			font-size: 17px;
+		}
+	
+		&__icon svg{
+			width: 45px;
+			height: 45px;
+			padding: 0 0.4em;
+		}
+
+		&__tab-home h3,
+		&__tab-people h3,
+		&__tab-education h3,
+		&__tab-musik h3,
+		&__tab-train h3 {
+			margin-top: 1em;
+		}
+
+
+		&__tab-text {
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
+		}
+
+		&__tab-text	p:first-child {
+			padding: 0 2em 1em 2em;
+		}
+
+		&__tab-text	p:last-child {
+			padding: 1em 2em 1em 2em;
+		}
+	}
+
+	.offer-i {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+/* @include max_600 {
+	.offer {
+		background-color: #F3F1F2;
+	
+		&__title {
+			
+			h3 {
+				text-align: center;
+				padding: 3em 0 .2em 0;
+				color: #566375;
+			}
+
+			p {
+				text-align: center;
+				color: #B2BCBD;
+			}
+		}
+
+		&__icons {
+			text-align: center;
+			margin: 4em 0 2em 0;
+			
+			li {
+				display: inline;
+			}
+		}
+
+		&__icon svg{
+			width: 80px;
+			height: 80px;
+			padding: 0 1em;
+
+		}
+	}
+} */

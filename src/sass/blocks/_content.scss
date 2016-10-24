@@ -22,7 +22,31 @@
 		
 	}
 
+	&__load-more {
+		text-align: center;
+		margin: 2em auto;
+		cursor: pointer;
+		
+			span {
+				display: inline-block;
+				text-decoration: underline;
+			}
+	}
+
+	&__load-more:hover span {
+		color: #E94E38;
+	}
+
 }
+
+.content::after {
+		content: " ";
+		display: block;
+		margin: 0 auto;
+    	width: 82.5%;
+		height: 2px;
+		background-color: #e2dee0;
+	}
 
 
 

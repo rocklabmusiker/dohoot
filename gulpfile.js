@@ -168,8 +168,8 @@ gulp.task('start', ['build', 'browser-sync', 'watch']);
 
 
 /*task to test css*/
-/*gulp.task('my-css', function() {
+gulp.task('my-css', function() {
     return gulp.src('src/sass/main.scss')
     .pipe(sass())
     .pipe(gulp.dest('src/'));
-});*/
+});
