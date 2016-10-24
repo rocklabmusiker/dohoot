@@ -1,0 +1,20 @@
+.all-button,
+.home-button, 
+.people-button,
+.education-button,
+.musik-button,
+.train-button {
+	cursor: pointer;
+}
+
+.content .mix {
+	display: none;
+}
+
+.all-button:hover {
+	color: #E94E38;
+}
+
+.all-button:focus {
+	color: #E94E38;
+}

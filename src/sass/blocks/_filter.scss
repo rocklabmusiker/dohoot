@@ -3,7 +3,7 @@
 @import "mixins/media-mixins";
 // @import "sprites/png-sprite"; 
 
-.filter {
+.fil {
 	height: 60px;
 	background-color: #FFF;
 	display: flex;
@@ -155,19 +155,11 @@
 
 }
 
-.home-button, 
-.people-button,
-.education-button,
-.musik-button,
-.train-button {
-	cursor: pointer;
-}
-
 
 
 @include max_1100 {
 
-	.filter {
+	.fil {
 		-webkit-flex-direction: column;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
@@ -194,7 +186,7 @@
 
 @include max_508 {
 
-	.filter {
+	.fil {
 	    
 		&__words {
 			margin: 2em 0;
@@ -211,13 +203,17 @@
 	  
 	  	}
 
-	  	.filter__list {
-		    margin-left: 55px;
+	  	.fil__list {
+		    margin: 0 35px 0 0;;
+		}
+
+		.fil__icon {
+		    padding: 3px;
 		}
 
 	  	&__text {
-	  		display: none;
-	  	}
+	  		padding: 0 0 0 30px;
+	  	} 
 	        	
 	}
 

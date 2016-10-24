@@ -8,7 +8,7 @@
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
-	    height: 42vh;
+	    height: 45vh;
 	    
 
 	&__search-wr h2 {
@@ -98,17 +98,10 @@
 	}
 
 @include max_508 {
-/* 	.top-banner {
-    height: 42vh;
-    
+	.top-banner {
+	   height: 42vh;
+	} 
 
-&__search-wr h2 {
-	color: #FFF;
-	text-align: center;
-	padding: 1em 0;
-}
-
-} */
 
 	.top-form {
 
@@ -125,5 +118,12 @@
 		}
 
 	}
+
+}
+
+@include max_360 {
+	.top-banner {
+	   height: 80vh;
+	} 
 
 }

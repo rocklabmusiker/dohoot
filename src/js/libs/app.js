@@ -39,6 +39,11 @@ jQuery(document).ready(function($) {
     })
 
 
+	/*mixitup*/
+	$("#container").mixItUp({
+
+		
+	});
 	
 }); //ready end
 

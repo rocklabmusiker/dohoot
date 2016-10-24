@@ -52,11 +52,13 @@
 		        flex-wrap: nowrap;
 	}
 
-.row-2 .big:first-child {
+.row-2 .big:first-child,
+.row-4 .big:first-child {
 	 margin: -3em 2em 0 9em;
 }
 
-.row-2 .big:last-child {
+.row-2 .big:last-child,
+.row-4 .big:last-child {
 	margin: -3em 9em 0 2em;
 }
 
@@ -74,18 +76,21 @@
 		margin: 1em 0;
 	}
 
-	.row-2 {
+	.row-2,
+	.row-4 {
 		-webkit-flex-wrap: wrap;
 		    -ms-flex-wrap: wrap;
 		        flex-wrap: wrap;
 	    margin-top: -3em;
 	}
 
-	.row-2 .big:first-child {
+	.row-2 .big:first-child,
+	.row-4 .big:first-child {
 		margin: 4em 2em 0 2em;
 	}
 
-	.row-2 .big:last-child {
+	.row-2 .big:last-child,
+	.row-4 .big:last-child {
 		margin: 4em 2em 0 2em;
 	}
 }
