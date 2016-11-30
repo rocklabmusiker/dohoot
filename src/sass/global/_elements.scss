@@ -146,7 +146,7 @@
 		}
 
 	&__main-icon {
-		background-color: #FFF;
+		background-color: #fff;
 		width: 56px;
 		height: 56px;
 		-webkit-border-radius: 50%;
@@ -157,13 +157,16 @@
 		z-index: 9999;
 		
 		svg {
+			background-color: #1BAF5D;
+			-webkit-border-radius: 50%;
+		    border-radius: 50%;
 			width: 50px;
 			height: 50px;
 			margin: 3px;
 		}
 
 		.main-svg {
-			fill: #1BAF5D;
+			fill: #fff;
 			margin: 0 auto;
 		}
 	}
@@ -329,13 +332,16 @@
 		z-index: 9999;
 		
 		svg {
+			background-color: #B6C0C1;
+			-webkit-border-radius: 50%;
+		    border-radius: 50%;
 			width: 50px;
 			height: 50px;
 			margin: 3px;
 		}
 
 		.main-svg {
-			fill: #B6C0C1; // color to change
+			fill: #fff; // color to change
 			margin: 0 auto;
 		}
 	}
@@ -501,13 +507,16 @@
 		z-index: 9999;
 		
 		svg {
+			background-color: #B6C0C1;
+			-webkit-border-radius: 50%;
+		    border-radius: 50%;
 			width: 50px;
 			height: 50px;
 			margin: 3px;
 		}
 
 		.main-svg {
-			fill: #B6C0C1; // color to change
+			fill: #fff; // color to change
 			margin: 0 auto;
 		}
 	}
@@ -673,13 +682,16 @@
 		z-index: 9999;
 		
 		svg {
+			background-color: #F19E1F;
+			-webkit-border-radius: 50%;
+		    border-radius: 50%;
 			width: 50px;
 			height: 50px;
 			margin: 3px;
 		}
 
 		.main-svg {
-			fill: #F19E1F; // color to change
+			fill: #fff; // color to change
 			margin: 0 auto;
 		}
 	}
@@ -845,13 +857,16 @@
 		z-index: 9999;
 		
 		svg {
+			background-color: #88499c;
+			-webkit-border-radius: 50%;
+		    border-radius: 50%;
 			width: 50px;
 			height: 50px;
 			margin: 3px;
 		}
 
 		.main-svg {
-			fill: #88499c; // color to change
+			fill: #fff; // color to change
 			margin: 0 auto;
 		}
 	}
@@ -941,13 +956,16 @@
 		z-index: 9999;
 		
 		svg {
+			background-color: #F19E1F;
+			-webkit-border-radius: 50%;
+		    border-radius: 50%;
 			width: 50px;
 			height: 50px;
 			margin: 3px;
 		}
 
 		.main-svg {
-			fill: #F19E1F; // color to change
+			fill: #fff; // color to change
 			margin: 0 auto;
 		}
 	}
@@ -1069,13 +1087,16 @@
 		z-index: 9999;
 		
 		svg {
+			background-color: #1BAF5D;
+			-webkit-border-radius: 50%;
+		    border-radius: 50%;
 			width: 50px;
 			height: 50px;
 			margin: 3px;
 		}
 
 		.main-svg {
-			fill: #1BAF5D; // color to change
+			fill: #fff; // color to change
 			margin: 0 auto;
 		}
 	}

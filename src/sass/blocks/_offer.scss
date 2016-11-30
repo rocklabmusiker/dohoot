@@ -32,8 +32,14 @@
 	&__icon svg{
 		width: 100px;
 		height: 100px;
-		padding: 0 1em;
-		cursor: pointer;
+	    border-radius: 50%;
+	    cursor: pointer;
+	    padding: 0;
+	    margin: 0 20px;
+	}
+
+	&__icon .fixed{
+		border: 2px solid #1baf5d;
 	}
 
 	&__icon-home,
@@ -41,18 +47,10 @@
 	&__icon-education,
 	&__icon-musik,
 	&__icon-train {
-		stroke:#9dacad;
-		fill:#fff;	
+		fill:#9dacad;	
 	}
 
-	&__icon-home:hover,
-	&__icon-people:hover,
-	&__icon-education:hover,
-	&__icon-musik:hover,
-	&__icon-train:hover {
-		stroke:#1db05e;
-		fill:#fff;		
-	}
+
 
 	&__tab-home h3,
 	&__tab-people h3,
@@ -82,24 +80,12 @@
 	
 }
 
-.offer-i {
-	width: 100px;
-	height: 100px;
-}
-
-.icon-active {
-	stroke:#1db05e;
-	fill:#fff;	
-}
-
+ 
+ 
 
 @include max_900 {
 	.offer {
 	
-		&__icon svg{
-			width: 80px;
-			height: 80px;
-		}
 
 		&__tab-text	p:first-child {
 			padding: 0 2em 0 4em;
@@ -110,10 +96,6 @@
 		}
 	}
 
-	.offer-i {
-		width: 80px;
-		height: 80px;
-	}
 }
 
 @include max_600 {

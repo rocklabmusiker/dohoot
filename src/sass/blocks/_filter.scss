@@ -131,26 +131,48 @@
 	&__icon svg {
 		width: 40px;
 		height: 40px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%
 	}
 
 	&__icon-home {
-		fill: #1baf5d;
+		fill: #fff;
+	}
+
+	&__icon.home-button svg {
+		background-color: #1baf5d;
 	}
 	
 	&__icon-people {
-		fill: #b6c0c1;
+		fill: #fff;
+	}
+
+	&__icon.people-button svg {
+		background-color: #b6c0c1;
 	}
 	
 	&__icon-education {
-		fill: #b6c0c1;
+		fill: #fff;
+	}
+
+	&__icon.education-button svg {
+		background-color: #b6c0c1;
 	}
 	
 	&__icon-musik {
-		fill: #f19e1f;
+		fill: #fff;
+	}
+
+	&__icon.musik-button svg {
+		background-color: #f19e1f;
 	}
 
 	&__icon-train {
-		fill: #88499c;
+		fill: #fff;
+	}
+
+	&__icon.train-button svg {
+		background-color: #88499c;
 	}
 
 }
