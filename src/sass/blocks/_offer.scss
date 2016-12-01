@@ -86,13 +86,16 @@
 @include max_900 {
 	.offer {
 	
-
 		&__tab-text	p:first-child {
 			padding: 0 2em 0 4em;
 		}
 
 		&__tab-text	p:last-child {
 			padding: 0 4em 0 2em;
+		}
+
+		&__icon svg {
+		    margin: 0 10px;
 		}
 	}
 
@@ -126,6 +129,10 @@
 		&__tab-musik h3,
 		&__tab-train h3 {
 			margin-top: 1em;
+		}
+
+		&__icon svg {
+		    margin: 0 5px;
 		}
 
 	}

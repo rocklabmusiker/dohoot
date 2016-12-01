@@ -135,10 +135,12 @@
 	&__follow {
 		color: #FFF;
 		margin: 0 2em;
+		text-align: center;
 	}
 
 	&__follow h3{
 		margin-bottom: .5em;
+		text-align: center;
 	}
 
 	&__follow p{
@@ -150,21 +152,20 @@
 .facebook {
 	width: 15px;
 	height: 29px;
+	fill: #fff;
 }
 
-.twitter {
-	width: 28px;
-	height: 22px;
-}
 
 .google {
 	width: 27px;
 	height: 29px;
+	fill: #fff;
 }
 
 .youtube {
 	width: 26px;
 	height: 31px;
+	fill: #fff;
 }
 
 
@@ -175,11 +176,11 @@
 		&__form {
 
 		height: 50px;
-		max-width: 500px;
+		max-width: 95%;
 
 			input {
 				height: 48px;
-				width: 52%;
+				width: 50%;
 			}
 
 
