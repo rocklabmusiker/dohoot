@@ -11,28 +11,24 @@
     	<div class="top-banner__search-wr">
     		<h2>What are you looking for?</h2>
     		<form class="top-form" name="1">
-    			<div class="top-form__custom">
-	    			<select name="Countrys" class="top-form__select">
-	    				<option select value="1" class="top-form__option"> Dubai</option>
-	    				<option select value="2" class="top-form__option"> London</option>
-	    				<option select value="3" class="top-form__option"> USA</option>
-	    				<option select value="4" class="top-form__option"> Brazil</option>
-	    			</select>
-	    			<svg>
-						<use xlink:href="#svg-icon-down" width="17" height="10" class="top-form__down"></use>
-					</svg>
-	    		</div>
-	    		<div class="top-form__custom">
-	    			<select name="Countrys" class="top-form__select">
-	    				<option select value="1" class="top-form__option"> Education</option>
-	    				<option select value="2" class="top-form__option"> Vocation</option>
-	    				<option select value="3" class="top-form__option"> Tourism</option>
-	    				<option select value="4" class="top-form__option"> Work</option>
-	    			</select>
-	    			<svg>
-						<use xlink:href="#svg-icon-down" width="17" height="10" class="top-form__down"></use>
-					</svg>
-	    		</div>
+    			<div class="wrapper-dropdown-3 dd" tabindex="1">
+		        	<span>Countrys</span>
+		            <ul class="dropdown">
+		              <li><a href="#"> Dubai</a></li>
+		              <li><a href="#"> London</a></li>
+		              <li><a href="#"> USA</a></li>
+		              <li><a href="#"> Brazil</a></li>
+		            </ul>
+		        </div>
+		        <div class="wrapper-dropdown-3 ddd" tabindex="1">
+		        	<span>Your goal</span>
+		            <ul class="dropdown">
+		              <li><a href="#"> Education</a></li>
+		              <li><a href="#"> Vocation</a></li>
+		              <li><a href="#"> Tourism</a></li>
+		              <li><a href="#"> Work</a></li>
+		            </ul>
+		        </div>
 	    		<input type="s" class="top-form__input" placeholder="Keyword,name,date,...">
 	    		<a href="#" class="top-form__button">SEARCH</a>
     		</form>
@@ -48,17 +44,15 @@
     	</div>
 <!--  -->
     	<div class="fil__map-select">
-    		<div class="fil__select">
-	    		<select name="Countrys" class="fil__select-list">
-		    		<option select value="1" class="fil__option"> DUBAI</option>
-		    		<option select value="2" class="fil__option"> LONDON</option>
-		    		<option select value="3" class="fil__option"> USA</option>
-		    		<option select value="4" class="fil__option"> BRAZIL</option>
-		    	</select>
-		    	<svg>
-					<use xlink:href="#svg-icon-down" width="17" height="10" class="filter__down-icon"></use>
-				</svg>
-			</div>
+    		<div class="wrapper-dropdown-3_new new" tabindex="1">
+	        	<span>Dubai</span>
+	            <ul class="dropdown">
+	              <li><a href="#"> Dubai</a></li>
+	              <li><a href="#"> London</a></li>
+	              <li><a href="#"> USA</a></li>
+	              <li><a href="#"> Brazil</a></li>
+	            </ul>
+	        </div>
 			<div class="fil__map">
 				<a href="#" class="fil__button">SHOW MAP
 			    	<svg>
@@ -72,7 +66,7 @@
 			<span class="fil__text all-button filter" data-filter="all" tabindex="1">ALL </span>
 			<span class="fil__icon home-button filter" data-filter=".category-1">
 				<svg>
-					<use xlink:href="#svg-icon-home" width="35" height="24" x="2" y="6" class="fil__icon-home"></use>
+					<use xlink:href="#svg-icon-home" width="87" height="24" x="-23" y="6" class="fil__icon-home"></use>
 				</svg>
 			</span>
 			<span class="fil__icon people-button filter" data-filter=".category-2">
@@ -87,12 +81,12 @@
 			</span>
 			<span class="fil__icon musik-button filter" data-filter=".category-4">
 				<svg>
-					<use xlink:href="#svg-icon-musik" width="35" height="22" x="1" y="8" class="fil__icon-musik"></use>
+					<use xlink:href="#svg-icon-musik" width="70" height="22" x="-16" y="8" class="fil__icon-musik"></use>
 				</svg>
 			</span>
 			<span class="fil__icon train-button filter" data-filter=".category-5">
 				<svg>
-					<use xlink:href="#svg-icon-train" width="35" height="35" x="2" y="1" class="fil__icon-train"></use>
+					<use xlink:href="#svg-icon-train" width="33" height="33" x="4" y="3" class="fil__icon-train"></use>
 				</svg>
 			</span>
 		</div>
@@ -110,17 +104,10 @@
 							</svg>
 							<a href="#">SHOW MORE</a>
 						</div>
-						<div class="home__hover-rating">
-							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="svg"></use>
-							</svg>
-							<svg>
-								<use xlink:href="#svg-icon-question" width="25" height="20" class="svg"></use>
-							</svg>
-						</div>
 					</div>
 					<div class="home__photo">
-						<img src="images/desktop/home.jpg" alt="home">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/home.jpg alt="home" class="lazy" width="210" height="140"> 
+
 						<span class="home__prise">$2,990</span>
 					</div>
 					<div class="home__info">
@@ -128,14 +115,26 @@
 						<p>Vision Agency</p>
 						<div class="home__rating">
 							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="rating-svg"></use>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
 							</svg>
 							<span>(365)</span>
 						</div>
 					</div>
 					<div class="home__main-icon">
 						<svg>
-							<use xlink:href="#svg-icon-home" width="50" height="35" y="5" class="main-svg"></use>
+							<use xlink:href="#svg-icon-home" width="87" height="35" y="5" x="-18" class="main-svg"></use>
 						</svg>
 					</div>
 				</div>
@@ -148,17 +147,9 @@
 							</svg>
 							<a href="#">SHOW MORE</a>
 						</div>
-						<div class="education__hover-rating">
-							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="svg"></use>
-							</svg>
-							<svg>
-								<use xlink:href="#svg-icon-question" width="25" height="20" class="svg"></use>
-							</svg>
-						</div>
 					</div>
 					<div class="education__photo">
-						<img src="images/desktop/education.jpg" alt="education">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/education.jpg alt="education" class="lazy" width="210" height="140">
 						<span class="education__prise">$2,300</span>
 					</div>
 					<div class="education__info">
@@ -166,7 +157,19 @@
 						<p>reality Agency</p>
 						<div class="education__rating">
 							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="rating-svg"></use>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
 							</svg>
 							<span>(104)</span>
 						</div>
@@ -187,17 +190,9 @@
 							</svg>
 							<a href="#">SHOW MORE</a>
 						</div>
-						<div class="people__hover-rating">
-							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="svg"></use>
-							</svg>
-							<svg>
-								<use xlink:href="#svg-icon-question" width="25" height="20" class="svg"></use>
-							</svg>
-						</div>
 					</div>
 					<div class="people__photo">
-						<img src="images/desktop/people.jpg" alt="people">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/people.jpg alt="people" class="lazy" width="210" height="140">
 						<span class="people__prise">$1,500</span>
 					</div>
 					<div class="people__info">
@@ -205,7 +200,19 @@
 						<p>vision Agency</p>
 						<div class="people__rating">
 							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="rating-svg"></use>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
 							</svg>
 							<span>(99)</span>
 						</div>
@@ -225,17 +232,9 @@
 							</svg>
 							<a href="#">SHOW MORE</a>
 						</div>
-						<div class="musik__hover-rating">
-							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="svg"></use>
-							</svg>
-							<svg>
-								<use xlink:href="#svg-icon-question" width="25" height="20" class="svg"></use>
-							</svg>
-						</div>
 					</div>
 					<div class="musik__photo">
-						<img src="images/desktop/musik.jpg" alt="musik">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/musik.jpg alt="musik" class="lazy" width="210" height="140">
 						<span class="musik__prise">$1,250</span>
 					</div>
 					<div class="musik__info">
@@ -243,14 +242,26 @@
 						<p>vision Agency</p>
 						<div class="musik__rating">
 							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="rating-svg"></use>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" x="1" y="1" class="rating-svg"></use>
 							</svg>
 							<span>(399)</span>
 						</div>
 					</div>
 					<div class="musik__main-icon">
 						<svg>
-							<use xlink:href="#svg-icon-musik" width="50" height="28" y="10" x="-2" class="main-svg"></use>
+							<use xlink:href="#svg-icon-musik" width="100" height="28" y="10" x="-27" class="main-svg"></use>
 						</svg>
 					</div>
 				</div>
@@ -259,18 +270,42 @@
 		<div class="content__row row-2">
 			<div class="musik-big big mix category-4">
 				<div class="musik-big__photo">
-					<img src="images/desktop/musik-big.jpg" alt="musik">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/musik-big.jpg alt="musik" class="lazy" width="455" height="120">
 					<div class="musik-big__rating">
 						<span>Skybox club </span>
 						<svg>
-							<use xlink:href="#svg-icon-stars" width="60" height="10" class="rating-svg"></use>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
 						</svg>
 						<span>(399)</span>
 					</div>
 				</div>	
 				<div class="musik-big__info">
 					<svg>
-						<use xlink:href="#svg-icon-stars" width="80" height="15" class="rating-svg"></use>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
 					</svg>
 					<div class="testimonials">
 						<div class="testimonials__img">
@@ -284,24 +319,48 @@
 				</div>
 				<div class="musik-big__main-icon">
 					<svg>
-						<use xlink:href="#svg-icon-musik" width="50" height="28" y="10" x="-2" class="main-svg"></use>
+						<use xlink:href="#svg-icon-musik" width="100" height="28" y="10" x="-27" class="main-svg"></use>
 					</svg>
 				</div>
 			</div>
 			<div class="home-big big mix category-1">
 				<div class="home-big__photo">
-					<img src="images/desktop/home-big.jpg" alt="home">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/home-big.jpg alt="home" class="lazy" width="455" height="120">
 					<div class="home-big__rating">
 						<span>VISION AGANCY </span>
 						<svg>
-							<use xlink:href="#svg-icon-stars" width="60" height="10" class="rating-svg"></use>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
 						</svg>
 						<span>(1299)</span>
 					</div>
 				</div>	
 				<div class="home-big__info">
 					<svg>
-						<use xlink:href="#svg-icon-stars" width="80" height="15" class="rating-svg"></use>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
 					</svg>
 					<div class="testimonials">
 						<div class="testimonials__img">
@@ -315,14 +374,14 @@
 				</div>
 				<div class="home-big__main-icon">
 					<svg>
-						<use xlink:href="#svg-icon-home" width="50" height="35" y="5" class="main-svg"></use>
+						<use xlink:href="#svg-icon-home" width="87" height="35" y="5" x="-18" class="main-svg"></use>
 					</svg>
 				</div>
 			</div>
 		</div>
 		<div class="content__row row-3">
 			<div class="row-1__double-one">
-		<!-- --><div class="home mix category-1" data-myorder="1">
+		<!-- --><div class="home mix category-1" data-myorder="5">
 					<div class="train__hover">
 						<div class="train__hover-more">
 							<svg>
@@ -330,17 +389,9 @@
 							</svg>
 							<a href="#">SHOW MORE</a>
 						</div>
-						<div class="train__hover-rating">
-							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="svg"></use>
-							</svg>
-							<svg>
-								<use xlink:href="#svg-icon-question" width="25" height="20" class="svg"></use>
-							</svg>
-						</div>
 					</div>
 					<div class="train__photo">
-						<img src="images/desktop/home.jpg" alt="home">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/home.jpg alt="home" class="lazy" width="210" height="140">
 						<span class="train__prise">$2,990</span>
 					</div>
 					<div class="train__info">
@@ -348,7 +399,19 @@
 						<p>Vision Agency</p>
 						<div class="train__rating">
 							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="rating-svg"></use>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
 							</svg>
 							<span>(365)</span>
 						</div>
@@ -368,17 +431,9 @@
 							</svg>
 							<a href="#">SHOW MORE</a>
 						</div>
-						<div class="education__hover-rating">
-							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="svg"></use>
-							</svg>
-							<svg>
-								<use xlink:href="#svg-icon-question" width="25" height="20" class="svg"></use>
-							</svg>
-						</div>
 					</div>
 					<div class="education__photo">
-						<img src="images/desktop/education.jpg" alt="education">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/education.jpg alt="education" class="lazy" width="210" height="140">
 						<span class="education__prise">$2,300</span>
 					</div>
 					<div class="education__info">
@@ -386,7 +441,19 @@
 						<p>reality Agency</p>
 						<div class="education__rating">
 							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="rating-svg"></use>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
 							</svg>
 							<span>(104)</span>
 						</div>
@@ -407,17 +474,9 @@
 							</svg>
 							<a href="#">SHOW MORE</a>
 						</div>
-						<div class="home__hover-rating">
-							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="svg"></use>
-							</svg>
-							<svg>
-								<use xlink:href="#svg-icon-question" width="25" height="20" class="svg"></use>
-							</svg>
-						</div>
 					</div>
 					<div class="home__photo">
-						<img src="images/desktop/people.jpg" alt="people">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/people.jpg alt="people" class="lazy" width="210" height="140">
 						<span class="home__prise">$1,500</span>
 					</div>
 					<div class="home__info">
@@ -425,14 +484,26 @@
 						<p>vision Agency</p>
 						<div class="home__rating">
 							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="rating-svg"></use>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
 							</svg>
 							<span>(99)</span>
 						</div>
 					</div>
 					<div class="home__main-icon">
 						<svg>
-							<use xlink:href="#svg-icon-home" width="50" height="35" y="5" class="main-svg"></use>
+							<use xlink:href="#svg-icon-home" width="87" height="35" y="5" x="-18" class="main-svg"></use>
 						</svg>
 					</div>
 				</div>
@@ -445,17 +516,9 @@
 							</svg>
 							<a href="#">SHOW MORE</a>
 						</div>
-						<div class="musik__hover-rating">
-							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="svg"></use>
-							</svg>
-							<svg>
-								<use xlink:href="#svg-icon-question" width="25" height="20" class="svg"></use>
-							</svg>
-						</div>
 					</div>
 					<div class="musik__photo">
-						<img src="images/desktop/musik.jpg" alt="musik">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/musik.jpg alt="musik" class="lazy" width="210" height="140">
 						<span class="musik__prise">$1,250</span>
 					</div>
 					<div class="musik__info">
@@ -463,14 +526,26 @@
 						<p>vision Agency</p>
 						<div class="musik__rating">
 							<svg>
-								<use xlink:href="#svg-icon-stars" width="86" height="16" class="rating-svg"></use>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
+							</svg>
+							<svg>
+								<use xlink:href="#svg-icon-stars" width="16" height="16" class="rating-svg"></use>
 							</svg>
 							<span>(399)</span>
 						</div>
 					</div>
 					<div class="musik__main-icon">
 						<svg>
-							<use xlink:href="#svg-icon-musik" width="50" height="28" y="10" x="-2" class="main-svg"></use>
+							<use xlink:href="#svg-icon-musik" width="100" height="28" y="10" x="-27" class="main-svg"></use>
 						</svg>
 					</div>
 				</div>
@@ -479,18 +554,42 @@
 		<div class="content__row row-4">
 			<div class="musik-big big mix category-4">
 				<div class="musik-big__photo">
-					<img src="images/desktop/musik-big.jpg" alt="musik">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/musik-big.jpg alt="musik" class="lazy" width="455" height="120">
 					<div class="musik-big__rating">
 						<span>Skybox club </span>
 						<svg>
-							<use xlink:href="#svg-icon-stars" width="60" height="10" class="rating-svg"></use>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
 						</svg>
 						<span>(399)</span>
 					</div>
 				</div>	
 				<div class="musik-big__info">
 					<svg>
-						<use xlink:href="#svg-icon-stars" width="80" height="15" class="rating-svg"></use>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
 					</svg>
 					<div class="testimonials">
 						<div class="testimonials__img">
@@ -504,24 +603,48 @@
 				</div>
 				<div class="musik-big__main-icon">
 					<svg>
-						<use xlink:href="#svg-icon-musik" width="50" height="28" y="10" x="-2" class="main-svg"></use>
+						<use xlink:href="#svg-icon-musik" width="100" height="28" y="10" x="-27" class="main-svg"></use>
 					</svg>
 				</div>
 			</div>
 			<div class="home-big big mix category-1">
 				<div class="home-big__photo">
-					<img src="images/desktop/home-big.jpg" alt="home">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/home-big.jpg alt="home" class="lazy" width="455" height="120">
 					<div class="home-big__rating">
 						<span>VISION AGANCY </span>
 						<svg>
-							<use xlink:href="#svg-icon-stars" width="60" height="10" class="rating-svg"></use>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
+						</svg>
+						<svg>
+							<use xlink:href="#svg-icon-stars" width="10" height="10" class="rating-svg"></use>
 						</svg>
 						<span>(1299)</span>
 					</div>
 				</div>	
 				<div class="home-big__info">
 					<svg>
-						<use xlink:href="#svg-icon-stars" width="80" height="15" class="rating-svg"></use>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
+					</svg>
+					<svg>
+						<use xlink:href="#svg-icon-stars" width="15" height="15" class="rating-svg"></use>
 					</svg>
 					<div class="testimonials">
 						<div class="testimonials__img">
@@ -535,7 +658,7 @@
 				</div>
 				<div class="home-big__main-icon">
 					<svg>
-						<use xlink:href="#svg-icon-home" width="50" height="35" y="5" class="main-svg"></use>
+						<use xlink:href="#svg-icon-home" width="87" height="35" y="5" x="-18" class="main-svg"></use>
 					</svg>
 				</div>
 			</div>

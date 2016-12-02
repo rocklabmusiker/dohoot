@@ -29,6 +29,7 @@
 		right: 10px;
 	    top: 5px;
 	}
+
 	// hover
 	 
 	&__hover {
@@ -69,25 +70,6 @@
 			width: 16px;
 			height: 16px;
 			margin: 7px 0 0 14px;
-		}
-
-		&-rating {
-			position: relative;
-		}
-
-		
-		&-rating svg:first-child{
-			width: 86px;
-			height: 16px;
-			float: left;
-			margin-left: 30px;
-		}
-
-		&-rating svg:last-child{
-			width: 25px;
-			height: 20px;
-			float: right;
-			margin-right: 40px;
 		}
 
 	}
@@ -131,19 +113,18 @@
 	}
 
 	&__rating svg { 
-		width: 86px;
+		width: 16px;
 		height: 16px;
 			
 	}
+
 
 	&__rating span{ 
 		display: inline-block;
 		color: #566375;
 	}
 
-		.rating-svg {
-			fill:#f19e1f; 
-		}
+	
 
 	&__main-icon {
 		background-color: #fff;
@@ -172,6 +153,8 @@
 	}
 	
 }
+
+
 
 /* kartei education small*/
 
@@ -246,24 +229,6 @@
 			margin: 7px 0 0 14px;
 		}
 
-		&-rating {
-			position: relative;
-		}
-
-		
-		&-rating svg:first-child{
-			width: 86px;
-			height: 16px;
-			float: left;
-			margin-left: 30px;
-		}
-
-		&-rating svg:last-child{
-			width: 25px;
-			height: 20px;
-			float: right;
-			margin-right: 40px;
-		}
 
 	}
 
@@ -306,7 +271,7 @@
 	}
 
 	&__rating svg { 
-		width: 86px;
+		width: 16px;
 		height: 16px;
 			
 	}
@@ -316,9 +281,6 @@
 		color: #566375;
 	}
 
-		.rating-svg {
-			fill:#f19e1f; 
-		}
 
 	&__main-icon {
 		background-color: #FFF;
@@ -421,25 +383,6 @@
 			margin: 7px 0 0 14px;
 		}
 
-		&-rating {
-			position: relative;
-		}
-
-		
-		&-rating svg:first-child{
-			width: 86px;
-			height: 16px;
-			float: left;
-			margin-left: 30px;
-		}
-
-		&-rating svg:last-child{
-			width: 25px;
-			height: 20px;
-			float: right;
-			margin-right: 40px;
-		}
-
 	}
 
 	&__hover:hover {
@@ -481,19 +424,16 @@
 	}
 
 	&__rating svg { 
-		width: 86px;
+		width: 16px;
 		height: 16px;
 			
 	}
+
 
 	&__rating span{ 
 		display: inline-block;
 		color: #566375;
 	}
-
-		.rating-svg {
-			fill:#f19e1f; 
-		}
 
 	&__main-icon {
 		background-color: #FFF;
@@ -596,24 +536,6 @@
 			margin: 7px 0 0 14px;
 		}
 
-		&-rating {
-			position: relative;
-		}
-
-		
-		&-rating svg:first-child{
-			width: 86px;
-			height: 16px;
-			float: left;
-			margin-left: 30px;
-		}
-
-		&-rating svg:last-child{
-			width: 25px;
-			height: 20px;
-			float: right;
-			margin-right: 40px;
-		}
 
 	}
 
@@ -656,7 +578,7 @@
 	}
 
 	&__rating svg { 
-		width: 86px;
+		width: 16px;
 		height: 16px;
 			
 	}
@@ -666,9 +588,6 @@
 		color: #566375;
 	}
 
-		.rating-svg {
-			fill:#f19e1f; 
-		}
 
 	&__main-icon {
 		background-color: #FFF;
@@ -770,26 +689,7 @@
 			height: 16px;
 			margin: 7px 0 0 14px;
 		}
-
-		&-rating {
-			position: relative;
-		}
-
 		
-		&-rating svg:first-child{
-			width: 86px;
-			height: 16px;
-			float: left;
-			margin-left: 30px;
-		}
-
-		&-rating svg:last-child{
-			width: 25px;
-			height: 20px;
-			float: right;
-			margin-right: 40px;
-		}
-
 	}
 
 	&__hover:hover {
@@ -831,7 +731,7 @@
 	}
 
 	&__rating svg { 
-		width: 86px;
+		width: 16px;
 		height: 16px;
 			
 	}
@@ -900,7 +800,13 @@
 	&__info	{
 
 		svg {
-			width: 80px;
+			width: 15px;
+			height: 15px;
+			margin: 15px 0 0 0;
+		}
+
+		svg:nth-of-type(1) {
+			width: 15px;
 			height: 15px;
 			margin: 15px 0 0 90px;
 		}
@@ -915,13 +821,13 @@
 
 	&__rating { 
 		bottom: 6px;
-	    left: 18%;
+	    left: 95px;
 	    position: absolute;
 	    right: 0;		
 	}
 
 	&__rating svg { 
-		width: 60px;
+		width: 10px;
 		height: 10px;
 			
 	}
@@ -939,10 +845,6 @@
 		color: #fff;
 		font-size: 10px;
 	}
-
-		.rating-svg {
-			fill:#f19e1f; 
-		}
 
 	&__main-icon {
 		background-color: #FFF;
@@ -1031,7 +933,13 @@
 	&__info	{
 
 		svg {
-			width: 80px;
+			width: 15px;
+			height: 15px;
+			margin: 15px 0 0 0;
+		}
+
+		svg:nth-of-type(1) {
+			width: 15px;
 			height: 15px;
 			margin: 15px 0 0 90px;
 		}
@@ -1046,13 +954,13 @@
 
 	&__rating { 
 		bottom: 6px;
-	    left: 18%;
+	    left: 95px;
 	    position: absolute;
 	    right: 0;		
 	}
 
 	&__rating svg { 
-		width: 60px;
+		width: 10px;
 		height: 10px;
 			
 	}

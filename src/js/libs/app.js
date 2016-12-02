@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+
 	
 	$(".top-bar__search svg").click(function() {
 
@@ -14,17 +14,6 @@ jQuery(document).ready(function($) {
 			
 	});
 
-    /*selects*/
-    $(".top-form__select").css({
-        border: 'none'
-    });
-
-    $(".top-form__select option[select]").css({
-        padding: '0 5px', 
-        width: '80%',
-        overflow: 'hidden',
-         backgroundColor: 'rgba(244,244,244,.8)'    
-    });
 
 /*placeholder*/
 	 $('input,textarea').focus(function(){
@@ -59,6 +48,11 @@ jQuery(document).ready(function($) {
     	$("#tabs").tabs();
   	});
 
+    //lazy  
+    $(function() {
+        $("img.lazy").lazyload();
+    });
+    
   	/*add class icons offer*/
  
 
@@ -178,10 +172,139 @@ jQuery(document).ready(function($) {
     	}
 	}); //(window).resize Ende 900
 
+    /*selects*/
+   function DropDown(el) {
+        this.dd = el;
+        this.placeholder = this.dd.children('span');
+        this.opts = this.dd.find('ul.dropdown > li');
+        this.val = '';
+        this.index = -1;
+        this.initEvents();
+      }
+      DropDown.prototype = {
+        initEvents : function() {
+          var obj = this;
 
-    
+          obj.dd.on('click', function(event){
+            $(this).toggleClass('active');
+            return false;
+          });
+
+          obj.opts.on('click',function(){
+            var opt = $(this);
+            obj.val = opt.text();
+            obj.index = opt.index();
+            obj.placeholder.text(obj.val);
+          });
+        },
+        getValue : function() {
+          return this.val;
+        },
+        getIndex : function() {
+          return this.index;
+        }
+      }
+
+      $(function() {
+
+        var dd = new DropDown( $('.dd') );
+
+        $(document).click(function() {
+          // all dropdowns
+          $('.wrapper-dropdown-3').removeClass('active');
+        });
+
+      });
+
+
+   /*selects 2*/
+   function DropDown(el) {
+        this.dd = el;
+        this.placeholder = this.dd.children('span');
+        this.opts = this.dd.find('ul.dropdown > li');
+        this.val = '';
+        this.index = -1;
+        this.initEvents();
+      }
+      DropDown.prototype = {
+        initEvents : function() {
+          var obj = this;
+
+          obj.dd.on('click', function(event){
+            $(this).toggleClass('active');
+            return false;
+          });
+
+          obj.opts.on('click',function(){
+            var opt = $(this);
+            obj.val = opt.text();
+            obj.index = opt.index();
+            obj.placeholder.text(obj.val);
+          });
+        },
+        getValue : function() {
+          return this.val;
+        },
+        getIndex : function() {
+          return this.index;
+        }
+      }
+
+      $(function() {
+
+        var dd = new DropDown( $('.ddd') );
+
+        $(document).click(function() {
+          // all dropdowns
+          $('.wrapper-dropdown-3').removeClass('active');
+        });
+
+      });
+
+	  /*selects 3*/
+   function DropDown(el) {
+        this.dd = el;
+        this.placeholder = this.dd.children('span');
+        this.opts = this.dd.find('ul.dropdown > li');
+        this.val = '';
+        this.index = -1;
+        this.initEvents();
+      }
+      DropDown.prototype = {
+        initEvents : function() {
+          var obj = this;
+
+          obj.dd.on('click', function(event){
+            $(this).toggleClass('active');
+            return false;
+          });
+
+          obj.opts.on('click',function(){
+            var opt = $(this);
+            obj.val = opt.text();
+            obj.index = opt.index();
+            obj.placeholder.text(obj.val);
+          });
+        },
+        getValue : function() {
+          return this.val;
+        },
+        getIndex : function() {
+          return this.index;
+        }
+      }
+
+      $(function() {
+
+        var dd = new DropDown( $('.new') );
+
+        $(document).click(function() {
+          // all dropdowns
+          $('.wrapper-dropdown-3_new').removeClass('active');
+        });
+
+      });
 
 	
-	
-}); //ready end
+
 
