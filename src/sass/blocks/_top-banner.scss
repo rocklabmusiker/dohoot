@@ -3,177 +3,11 @@
 @import "mixins/media-mixins";
 // @import "sprites/png-sprite"; 
 
-.top-banner {
-	background: url(../images/desktop/top-banner.jpg) no-repeat 50% 0;
-	-webkit-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
-	    height: 45vh;
-	    
-
-	&__search-wr h2 {
-		color: #FFF;
-		text-align: center;
-		padding: 1em 0;
-	}
-
-}
-
-.top-form {
-		text-align: center;
-		
-
-		&__input {
-			width: 440px;
-			height: 50px;
-			color: #fff;
-		    font-size: 16px;
-			margin: 2em auto;
-			padding-left: 10px;
-			border-radius: 30px;
-			border: none;
-			display: block;
-			position: relative;
-			background: rgba(244, 244, 244, 0.1) none repeat scroll 0 0;
-		}
-
-		&__button {
-			width: 135px;
-			height: 50px;
-			line-height: 50px;
-			color: #fff;
-		    font-size: 16px;
-			margin: 2em auto;
-			border-radius: 30px;
-			border: none;
-			display: block;
-			background-color:#e94e38;
-		}
-
-		&__button:hover {
-			background: rgba(244, 244, 244, 0.1) none repeat scroll 0 0;
-		}
-	}
-
-/* DEMO 3 */
-
-.wrapper-dropdown-3 {
-    /* Size and position */
-    position: relative;
-    width: 190px;
-	height: 30px;
-	margin: 0 1em;
-    padding: 10px;
-    display: inline-block;
-
-    /* Styles */
-    background: rgba(244, 244, 244, 0.1) none repeat scroll 0 0;
-    border-radius: 30px;
-    cursor: pointer;
-    outline: none;
-
-    /* Font settings */
-    font-weight: bold;
-    color: #fff;
-}
-
- .wrapper-dropdown-3:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    margin-top: -3px;
-    border-width: 6px 6px 0 6px;
-    border-style: solid;
-    border-color: #fff transparent;
-} 
-
-.wrapper-dropdown-3 .dropdown {
-  /* Size & position */
-    position: absolute;
-    top: 140%;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-
-    /* Styles */
-    background: rgba(244, 244, 244, 0.9) none repeat scroll 0 0;
-    border-radius: inherit;
-    border: 1px solid rgba(0,0,0,0.17);
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    font-weight: normal;
-    -moz-transition: all 0.5s ease-in;
-    -ms-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in;
-    list-style: none;
-
-    /* Hiding */
-    opacity: 0;
-}
-
-
-.wrapper-dropdown-3 .dropdown li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #566375;
-    font-size: 14px;
-    font-weight: bold;
-    border-bottom: 1px solid #566375;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.wrapper-dropdown-3 .dropdown li i {
-    float: right;
-    color: inherit;
-}
-
-.wrapper-dropdown-3 .dropdown li:first-of-type a {
-    border-radius: 30px 30px 0 0;
-}
-
-.wrapper-dropdown-3 .dropdown li:last-of-type a {
-    border-radius: 0 0 30px 30px;
-    border: none;
-}
-
-/* Hover state */
-
-.wrapper-dropdown-3 .dropdown li:hover a {
-    background: #f3f8f8;
-}
-
-
-
-/* Active state */
-
-.wrapper-dropdown-3.active .dropdown {
-    opacity: 1;
-}
-
-/* No CSS3 support */
-
-.no-opacity       .wrapper-dropdown-3 .dropdown,
-.no-pointerevents .wrapper-dropdown-3 .dropdown {
-    display: none;
-    opacity: 1; /* If opacity support but no pointer-events support */
-}
-
-.no-opacity       .wrapper-dropdown-3.active .dropdown,
-.no-pointerevents .wrapper-dropdown-3.active .dropdown {
-    display: block;
-}
 
 
 @include max_508 {
 	.top-banner {
-	   height: 400px;
+	   height: 450px;
 	} 
 
 
@@ -194,15 +28,31 @@
 	}
 
 	.wrapper-dropdown-3 {
-	    margin: 0.5em;
+	    margin: 0.5em 0 3em;
+	    width: 230px;	  
+	}
+	
+	.dd {
+		text-align: center;
+	}
+	
+	.wrapper-dropdown-3 .dropdown {
+	    top: 0;
+	}
+
+	.wrapper-dropdown-3 .dropdown li a {
+	    font-size: 16px;
+	    padding: 20px;
 	}
 
 }
 
 @include max_360 {
 	.top-banner {
-	   height: 400px;
+	   height: 450px;
+	   
 	} 
 
 }
+
 

@@ -224,6 +224,8 @@
       });
 
 
+
+
    /*selects 2*/
    function DropDown(el) {
         this.dd = el;
@@ -239,6 +241,7 @@
 
           obj.dd.on('click', function(event){
             $(this).toggleClass('active');
+            /*$(this).css({ zIndex: '99999'});*/
             return false;
           });
 
@@ -312,6 +315,24 @@
 
       });
 
-	
+   
+	$(".dd").click(function() {
+
+    if($(this).attr('data-click-state') == 0) {
+      $(this).attr('data-click-state', 1);
+      $('.dd').css({ zIndex: '0'});
+    }
+
+    else {
+      $(this).attr('data-click-state', 0);
+      $('.dd').css({ zIndex: '99999'});
+      $('.ddd').css({ zIndex: '0'});  
+    }
+      
+  });
 
 
+      $('.ddd').click(function(event) {
+         $('.ddd').css({ zIndex: '0'});
+        $(this).css({ zIndex: '99999'});
+      });

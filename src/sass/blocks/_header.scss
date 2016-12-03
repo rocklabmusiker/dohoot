@@ -6,8 +6,8 @@
 
 /* loader */
 /* .loader {
-    border: 16px solid #f3f3f3; Light grey
-    border-top: 16px solid #3498db; Blue
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -42,112 +42,6 @@ body.pre-loaded .pre-loader {
 /* end loader */
 
 
-.top-bar {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-align-items: center;
-	        align-items: center;
-	padding: 0;
-	
-	&__logo {
-		-webkit-flex-grow: 1;
-		        flex-grow: 1;
-	     padding-left: 2em;
-	}
-	
-	&__search {
-		 background-color: #e2dee0;
-		 
-	}
-
-	&__search svg{
-		width: 27px;
-		height: 27px;
-		padding: 0 2em;
-		margin: -7px 0;
-		cursor: pointer;
-	}
-
-
-	&-login-wr {
-		display: -webkit-flex;
-	    display: -moz-flex;
-	    display: -ms-flex;
-	    display: -o-flex;
-	    display: flex;
-	}
-
-	&__search input {
-		width: 0;
-		height: 70px;
-		padding: 0;
-		margin: 0;
-		border: none;
-		background-color: #f4f0f2;
-		
-	}
-
-	&__login {
-		background-color: #e94e38;
-		height: 70px;
-		max-width: 250px;
-    	min-width: 120px;
-		-webkit-align-self: flex-end;
-		        align-self: flex-end; 
-		-webkit-flex-grow: 1;
-		        flex-grow: 1;
-		line-height: 70px;
-		padding-left: 15px;
-	}
-
-	&__login svg{
-		height: 18px;
-		width: 30px;
-		margin: -1px;
-	}
-
-	&__login span{
-		font-weight: bold;
-		color: #FFF;
-		cursor: pointer;
-	}
-
-	&__login span:hover{
-		color: #E2DEE0;
-	}
-
-}
-
-
-.nav {
-	-webkit-flex-grow: 1;
-		    flex-grow: 1;
-
-	&__list {
-		height: 70px;
-		line-height: 41px;
-		display: inline-block;
-	}
-
-	&__item {
-		display: inline-block;
-		padding: 1em;
-		font-size: 14px;
-	}
-
-	&__item--active{
-		color: #E94E38;
-	}
-
-	&__item:hover{
-		color: #E94E38;
-		background-color: #E2DEE0;
-	}
-
-}
 
 @include max_1100 {
 	.top-bar {

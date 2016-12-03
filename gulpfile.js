@@ -29,7 +29,7 @@ var path = {
     src: {
         html: 'src/*.html',
         js: 'src/js/main.js',
-        style: 'src/sass/main.scss',
+        style: 'src/sass/*.scss',
         img: 'src/images/**/*.*',
         pngSprite: 'src/sprite/png/',
         svgSprite: 'src/sprite/svg/**/*.svg',
