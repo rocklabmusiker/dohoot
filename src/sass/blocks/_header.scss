@@ -3,7 +3,42 @@
 @import "mixins/media-mixins";
 // @import "sprites/png-sprite"; 
 
+/* loader */
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 25% auto;
+    animation: spin 2s linear infinite;
+}
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.pre-loader {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+body.pre-loaded .pre-loader {
+    transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+
+}
+
+/* end loader */
 
 .top-bar {
 	display: -webkit-flex;
@@ -34,10 +69,6 @@
 		cursor: pointer;
 	}
 
-	&__search-svg {
-		fill: #fff;
-		
-	}
 
 	&-login-wr {
 		display: -webkit-flex;

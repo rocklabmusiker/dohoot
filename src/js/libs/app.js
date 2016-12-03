@@ -14,6 +14,13 @@
 			
 	});
 
+    // hide-loader
+    setTimeout(function () {
+        document.getElementsByTagName('body')[0].className += ' pre-loaded';
+        console.log('main-js.injected');
+    }, 1000);
+    
+
 
 /*placeholder*/
 	 $('input,textarea').focus(function(){

@@ -89,7 +89,7 @@
 
 @include max_1100  {
 	.content {
-		 margin-top: 10em;
+		 margin-top: 0;
 
 	}
 
@@ -118,11 +118,23 @@
 	.row-4 .big:last-child {
 		margin: 4em 2em 0 2em;
 	}
+
+
 }
+
+@include max_700 {
+	.testimonials__img {
+	    width: 85px;
+	    height: 42px;
+	    margin: 8px;
+	}
+}
+
+
 
 @include max_508  {
 	.content {
-		 margin-top: 12em;
+		 margin-top: 1em;
 
 	}
 	

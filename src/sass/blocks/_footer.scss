@@ -97,7 +97,6 @@
 	&__icon-mail {
 		width: 18px;
 		height: 15px;
-		fill:#fff;
 	}
 
 	&__impressum {
@@ -152,26 +151,23 @@
 .facebook {
 	width: 15px;
 	height: 29px;
-	fill: #fff;
 }
 
 
 .google {
 	width: 27px;
 	height: 29px;
-	fill: #fff;
 }
 
 .youtube {
 	width: 26px;
 	height: 31px;
-	fill: #fff;
 }
 
 
 @include max_508 {
 	.footer {
-		height: 95vh;
+		height: 820px;
 		
 		&__form {
 
