@@ -7,7 +7,7 @@
 
 @include max_508 {
 	.top-banner {
-	   height: 450px;
+	   height: 500px;
 	} 
 
 
@@ -23,9 +23,11 @@
 
 		&__input {
 			width: 250px;
+			 margin: 3em auto;
 		}
 
 	}
+
 
 	.wrapper-dropdown-3 {
 	    margin: 0.5em 0 3em;
@@ -49,7 +51,7 @@
 
 @include max_360 {
 	.top-banner {
-	   height: 450px;
+	   height: 500px;
 	   
 	} 
 

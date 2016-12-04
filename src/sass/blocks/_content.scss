@@ -9,6 +9,7 @@
 	-webkit-flex-direction: column;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+	overflow: visible;
 	
 	&__row {
 		display: flex;
@@ -19,7 +20,6 @@
 		        flex-wrap: wrap;
 		margin-top: 4em;
 		padding: 1em;
-		
 	}
 
 	&__load-more {
@@ -134,7 +134,7 @@
 
 @include max_508  {
 	.content {
-		 margin-top: 1em;
+		 margin-top: 2em;
 
 	}
 	

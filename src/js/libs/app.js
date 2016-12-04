@@ -336,3 +336,19 @@
          $('.ddd').css({ zIndex: '0'});
         $(this).css({ zIndex: '99999'});
       });
+
+$(".new").click(function() {
+
+    if($(this).attr('data-click-state') == 0) {
+      $(this).attr('data-click-state', 1);
+      $('.fil__map-select').css({ zIndex: '0'});
+       $('.new').css({ zIndex: '0'});
+    }
+
+    else {
+      $(this).attr('data-click-state', 0);
+      $('.fil__map-select').css({ zIndex: '99999'});
+      $('.new').css({ zIndex: '99999'});
+    }
+      
+  });
